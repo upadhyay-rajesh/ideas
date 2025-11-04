@@ -3,7 +3,7 @@ package com.example.benchmarks;
 import org.openjdk.jmh.annotations.*;
 import java.util.concurrent.TimeUnit;
 
-@BenchmarkMode(Mode.Throughput)
+@BenchmarkMode(Mode.All)
 @OutputTimeUnit(TimeUnit.MILLISECONDS)
 @State(Scope.Thread)
 @Fork(1)                  // only 1 fork instead of 5
