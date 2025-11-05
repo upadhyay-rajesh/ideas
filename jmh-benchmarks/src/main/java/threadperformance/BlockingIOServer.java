@@ -82,7 +82,7 @@ public class NonBlockingServer {
 
         System.out.println("NIO Server started on port 8080...");
 
-        ByteBuffer buffer = ByteBuffer.allocate(256);
+        ByteBuffer buffer = ByteBuffer.allocate(256); 
 
         while (true) {
             selector.select(); // blocks until any channel is ready
