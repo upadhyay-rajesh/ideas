@@ -3,6 +3,7 @@ package threadperformance;
 What Is a Deadlock?
   A deadlock happens when two or more threads hold locks and each waits for the other to release theirs — none can proceed.
 */
+/*
 public class DeadlockExample {
     private final Object lockA = new Object();
     private final Object lockB = new Object();
@@ -37,7 +38,7 @@ public class DeadlockExample {
         t2.start();
     }
 }
-
+*/
 /* Output:
 Thread-1 locked A
 Thread-2 locked B
@@ -83,11 +84,11 @@ Visual and real-time detection.
 */
 
 //Example using tryLock()
-/*
+
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.TimeUnit;
 
-public class DeadlockAvoidance {
+ class DeadlockAvoidance {
     private final ReentrantLock lockA = new ReentrantLock();
     private final ReentrantLock lockB = new ReentrantLock();
 
@@ -119,7 +120,7 @@ public class DeadlockAvoidance {
         t1.start(); t2.start();
     }
 }
-*/
+
 
 // No deadlock — tryLock() times out gracefully.
 
